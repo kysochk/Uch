@@ -23,6 +23,8 @@ namespace Uch
         public MainWindow()
         {
             InitializeComponent();
+            BaseConnect.BaseModel = new Entities(); //БД
+         
         }
     }
 }
