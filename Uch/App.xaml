@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:Uch"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Tw Cen MT"/>
+        </Style>
+        <Style TargetType="Button" >
+            <Setter Property="FontFamily"  Value="Comic Sans MS"/>
+            <Setter Property="Background" Value="#fdbd40"/>
+        </Style>
+
+        <Style  TargetType="TextBlock" x:Key="Tb_discount">
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
     </Application.Resources>
 </Application>

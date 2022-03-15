@@ -8,9 +8,21 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="101*"/>
-            <RowDefinition Height="39*"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="168" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <DockPanel Grid.ColumnSpan="2" LastChildFill="True" Margin="0,0,-0.4,0.4">
+            <Image Source="/Logo/Logo.png" DockPanel.Dock="Left"/>
+            <TextBlock Text="Намордники" FontSize ="55" Margin="0,0,0,0.4" Width="881" />
+        </DockPanel>
+        <Image Margin="0,0,97,0.4" Height="70" VerticalAlignment="Bottom" />
+        <Frame x:Name="FrameMain" Grid.ColumnSpan="2" NavigationUIVisibility="Hidden" Margin="0,70,-0.4,0" Grid.RowSpan="2" />
 
     </Grid>
 </Window>
